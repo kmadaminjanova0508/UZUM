@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 import Navbar from './components/Navbar/Navbar';
+import Swiper from './components/Swiper/Swiper';
+import Categoties from './components/Categories/Categoties';
 
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
   return (
     <div className={`container ${theme}`}>
       <Navbar theme = {theme} setTheme={setTheme} />
+      <Swiper/>
+      <Categoties/>
     </div>
   )
 }
