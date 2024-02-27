@@ -1,4 +1,4 @@
-
+import './Cards.css'
 import img1 from '../../assets/Product1.jpg'
 import img2 from '../../assets/product2.jpg'
 import img3 from '../../assets/product3.jpg'
