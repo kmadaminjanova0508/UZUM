@@ -1,7 +1,11 @@
 import { useState, useEffect } from 'react'
 import Navbar from './components/Navbar/Navbar';
 import Swiper from './components/Swiper/Swiper';
-import Categoties from './components/Categories/Categoties';
+import Categoties from './components/Categories/Categoties'
+import Cards from './components/Cards/Cards';
+import Footer from './components/Footer/Footer';
+
+
 
 
 function App() {
@@ -29,10 +33,14 @@ function App() {
 
 
   return (
-    <div className={`container ${theme}`}>
+    <div className={`containerr ${theme}`}>
       <Navbar theme = {theme} setTheme={setTheme} />
       <Swiper/>
       <Categoties/>
+    
+      <Cards/>
+  
+     <Footer/>
     </div>
   )
 }

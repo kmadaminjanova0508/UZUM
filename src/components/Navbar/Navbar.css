@@ -15,12 +15,13 @@
     cursor: pointer;
 }
 
-ul{
+.uli{
     flex: 1;
     list-style: none;
     text-align: center;
 }
-ul li{
+
+.uli li{
     display: inline-block;
     margin: 10px 15px;
     font-size: 18px;
