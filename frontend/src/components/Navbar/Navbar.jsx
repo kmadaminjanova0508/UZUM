@@ -6,12 +6,16 @@ import search_light from '../../assets/search-w.png'
 import search_dark from '../../assets/search.png'
 import toggle_light from '../../assets/night.png'
 import toggle_dark from '../../assets/day.png'
-
+import ShopModal  from '../ShopModal/ShopModal'
+import { useState } from 'react'
 
 
 
 const Navbar = ({ theme , setTheme}) => {
 
+
+  const [OpenMod, setMod] = useState(false);
+  const handleOnClose = () => setMod(false);
   const toggle_mode =()=>{
     theme == 'light' ? setTheme('dark') : setTheme('light');
   }
@@ -24,7 +28,7 @@ const Navbar = ({ theme , setTheme}) => {
             <li>Kаталог</li>
             <li>Желания</li>
             <li>Kабинет</li>
-            <li>Корзина</li>
+            <li onClick={() => setMod(true)}>Корзина</li>
         </ul>
       
       <div className='searchbox'>
@@ -33,7 +37,9 @@ const Navbar = ({ theme , setTheme}) => {
       </div>
 
       <img onClick={()=>{toggle_mode()}} src={theme == 'light' ? toggle_light : toggle_dark} alt="" className='toggle-icon' />
-    
+      
+
+<ShopModal onClose={handleOnClose} visible={OpenMod} />
         </div>
   )
 }

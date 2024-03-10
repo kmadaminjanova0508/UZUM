@@ -14,21 +14,21 @@ export  default function Modal({visible, onClose}) {
     <div
     id = 'modal'
     onClick={handleOnClose} className='fixed inset-0  bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center  z-50'>
-    <div className='bg-white p-2 rounded'>
+    <div className='bg-white dark:bg-gray-700  p-2 rounded'>
    <div className="bg-gray-100 py-8 dark:bg-gray-800">
     <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
     <div className="mx-4 flex flex-col md:flex-row">
       <div className="px-4 md:flex-1">
-        <div className="mb-4 h-[460px] rounded-lg bg-gray-300 dark:bg-gray-700">
-          <img className="h-full w-full object-cover" src="https://cdn.pixabay.com/photo/2020/05/22/17/53/mockup-5206355_960_720.jpg" alt="Product Image" />
+        <div className="mb-4 h-[460px] rounded-lg bg-gray-300 dark:bg-gray-700 ">
+          <img className=" h-full w-full object-cover" src="https://cdn.pixabay.com/photo/2020/05/22/17/53/mockup-5206355_960_720.jpg" alt="Product Image" />
         </div>
     
       </div>
       <div className="px-4 md:flex-1 flex items-start">
        <div className="md:flex-1 ">
         <div className='flex items-start'>
-        <h2 className="mb-2 leading-tight tracking-tight font-bold text-gray-800 text-2xl md:text-3xl">Lorem ipsum dolor, sit amet consectetur, adipisicing elit.</h2> 
-        <button onClick={onClose}>x</button>
+        <h2 className="mb-2 leading-tight tracking-tight font-bold text-gray-800 text-2xl md:text-3xl dark:text-white">Lorem ipsum dolor, sit amet consectetur, adipisicing elit.</h2> 
+        <button onClick={onClose} className='dark:text-white'>x</button>
         </div>
         <p className="text-gray-500 text-sm">От: <a href="#" className="text-indigo-600 hover:underline">Компании АВС</a></p>
 
@@ -45,7 +45,7 @@ export  default function Modal({visible, onClose}) {
           </div>
         </div>
 
-        <p className="text-gray-500">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Vitae exercitationem porro saepe ea harum corrupti vero id laudantium enim, libero blanditiis expedita cupiditate a est.</p>
+        <p className="text-gray-500 ">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Vitae exercitationem porro saepe ea harum corrupti vero id laudantium enim, libero blanditiis expedita cupiditate a est.</p>
            <div className="py-3">
             <span className="font-bold text-gray-700 dark:text-gray-300">Наличие:</span>
             <span className="text-gray-600 dark:text-gray-300">В наличии</span>
