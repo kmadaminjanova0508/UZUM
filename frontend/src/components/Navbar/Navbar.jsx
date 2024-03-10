@@ -9,6 +9,7 @@ import toggle_dark from '../../assets/day.png'
 
 
 
+
 const Navbar = ({ theme , setTheme}) => {
 
   const toggle_mode =()=>{
@@ -32,6 +33,7 @@ const Navbar = ({ theme , setTheme}) => {
       </div>
 
       <img onClick={()=>{toggle_mode()}} src={theme == 'light' ? toggle_light : toggle_dark} alt="" className='toggle-icon' />
+    
         </div>
   )
 }
